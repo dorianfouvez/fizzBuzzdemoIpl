@@ -16,4 +16,12 @@ class FizzBuzzTest extends TestCase{
         //Assert : qui test si la fonction a donné le bon resultat
         $this->assertEquals("1", $actual);
     }
+
+    public function test_count_given2_shouldReturn2(){
+        $fizzBuzz = new \FizzBuzz();
+
+        $actual = $fizzBuzz->count(2);
+
+        $this->assertEquals("2", $actual);
+    }
 }
