@@ -30,7 +30,7 @@ class FizzBuzzTest extends TestCase{
         $this->assertEquals("2", $actual);
     }
 
-    public function test_count_given3_shouldReturn3(){
+    public function test_count_given3_shouldReturnFizz(){
         $actual = $this->fizzBuzz->count(3);
 
         $this->assertEquals("Fizz", $actual);
@@ -40,5 +40,11 @@ class FizzBuzzTest extends TestCase{
         $actual = $this->fizzBuzz->count(4);
 
         $this->assertEquals("4", $actual);
+    }
+
+    public function test_count_given5_shouldReturnBuzz(){
+        $actual = $this->fizzBuzz->count(5);
+
+        $this->assertEquals("Buzz", $actual);
     }
 }
